@@ -1,15 +1,18 @@
 package goldilocks
 
 import (
+	"crypto/rand"
 	"encoding/binary"
+	"math/big"
 	"math/bits"
-	"math/rand/v2"
 )
 
 type GoldilocksField uint64
 
 const EPSILON = uint64((1 << 32) - 1)
 const ORDER = uint64(0xffffffff00000001)
+
+var ORDER_BIG, _ = new(big.Int).SetString("0xffffffff00000001", 16)
 
 func NonCannonicalGoldilocksField(x int64) GoldilocksField {
 	if x < 0 {
@@ -111,7 +114,11 @@ func NegF(x GoldilocksField) GoldilocksField {
 }
 
 func SampleF() GoldilocksField {
-	return GoldilocksField(rand.Uint64N(ORDER))
+	rng, err := rand.Int(rand.Reader, ORDER_BIG)
+	if err != nil {
+		panic("failed to read random bytes into buffer")
+	}
+	return GoldilocksField(rng.Uint64())
 }
 
 func ToLittleEndianBytesF(z GoldilocksField) []byte {
