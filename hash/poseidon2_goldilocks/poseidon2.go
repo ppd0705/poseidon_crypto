@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"hash"
 
-	g "github.com/elliottech/poseidon_crypto/field/goldilocks"
-	gFp5 "github.com/elliottech/poseidon_crypto/field/goldilocks_quintic_extension"
+	g "github.com/ppd0705/poseidon_crypto/field/goldilocks"
+	gFp5 "github.com/ppd0705/poseidon_crypto/field/goldilocks_quintic_extension"
 )
 
 type HashOut [4]g.Element

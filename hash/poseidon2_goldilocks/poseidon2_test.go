@@ -4,7 +4,7 @@ import (
 	"math"
 	"testing"
 
-	g "github.com/elliottech/poseidon_crypto/field/goldilocks"
+	g "github.com/ppd0705/poseidon_crypto/field/goldilocks"
 )
 
 func TestPermute(t *testing.T) {

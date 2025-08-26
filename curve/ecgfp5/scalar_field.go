@@ -7,7 +7,7 @@ import (
 	"math/big"
 	"math/rand"
 
-	gFp5 "github.com/elliottech/poseidon_crypto/field/goldilocks_quintic_extension"
+	gFp5 "github.com/ppd0705/poseidon_crypto/field/goldilocks_quintic_extension"
 )
 
 // ECgFp5Scalar represents the scalar field of the ECgFP5 elliptic curve where

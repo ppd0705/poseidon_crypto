@@ -12,9 +12,9 @@ import (
 	"testing"
 	"time"
 
-	g "github.com/elliottech/poseidon_crypto/field/goldilocks"
-	poseidon2_gnark "github.com/elliottech/poseidon_crypto/hash/poseidon2_goldilocks"
-	poseidon2_plonky2 "github.com/elliottech/poseidon_crypto/hash/poseidon2_goldilocks_plonky2"
+	g "github.com/ppd0705/poseidon_crypto/field/goldilocks"
+	poseidon2_gnark "github.com/ppd0705/poseidon_crypto/hash/poseidon2_goldilocks"
+	poseidon2_plonky2 "github.com/ppd0705/poseidon_crypto/hash/poseidon2_goldilocks_plonky2"
 )
 
 func TestLongRunningCompare(t *testing.T) {

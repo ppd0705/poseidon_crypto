@@ -1,6 +1,6 @@
 package poseidon2_plonky2
 
-import g "github.com/elliottech/poseidon_crypto/field/goldilocks"
+import g "github.com/ppd0705/poseidon_crypto/field/goldilocks"
 
 const (
 	WIDTH = 12

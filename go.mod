@@ -1,4 +1,4 @@
-module github.com/elliottech/poseidon_crypto
+module github.com/ppd0705/poseidon_crypto
 
 go 1.20
 

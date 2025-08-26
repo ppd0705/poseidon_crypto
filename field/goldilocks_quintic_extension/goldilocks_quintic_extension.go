@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math/big"
 
-	g "github.com/elliottech/poseidon_crypto/field/goldilocks"
+	g "github.com/ppd0705/poseidon_crypto/field/goldilocks"
 )
 
 type Element [5]g.Element

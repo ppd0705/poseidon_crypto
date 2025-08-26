@@ -3,8 +3,8 @@ package ecgfp5
 import (
 	"testing"
 
-	g "github.com/elliottech/poseidon_crypto/field/goldilocks"
-	gFp5 "github.com/elliottech/poseidon_crypto/field/goldilocks_quintic_extension"
+	g "github.com/ppd0705/poseidon_crypto/field/goldilocks"
+	gFp5 "github.com/ppd0705/poseidon_crypto/field/goldilocks_quintic_extension"
 )
 
 func TestEncode(t *testing.T) {

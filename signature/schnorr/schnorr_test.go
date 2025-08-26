@@ -3,10 +3,10 @@ package signature
 import (
 	"testing"
 
-	curve "github.com/elliottech/poseidon_crypto/curve/ecgfp5"
-	g "github.com/elliottech/poseidon_crypto/field/goldilocks"
-	gFp5 "github.com/elliottech/poseidon_crypto/field/goldilocks_quintic_extension"
-	p2 "github.com/elliottech/poseidon_crypto/hash/poseidon2_goldilocks"
+	curve "github.com/ppd0705/poseidon_crypto/curve/ecgfp5"
+	g "github.com/ppd0705/poseidon_crypto/field/goldilocks"
+	gFp5 "github.com/ppd0705/poseidon_crypto/field/goldilocks_quintic_extension"
+	p2 "github.com/ppd0705/poseidon_crypto/hash/poseidon2_goldilocks"
 )
 
 func TestSchnorrSignAndVerify(t *testing.T) {
